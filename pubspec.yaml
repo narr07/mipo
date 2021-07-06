@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  adobe_xd: ^2.0.0
   flutter:
     sdk: flutter
 
@@ -38,6 +39,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -60,6 +63,16 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: AC-Black
+      fonts:
+        - asset: assets\fonts\AdobeClean-Black.otf
+    - family: AC-Bold
+      fonts:
+        - asset: assets\fonts\AdobeClean-Bold.otf
+    - family: AC-Regular
+      fonts:
+        - asset: assets\fonts\AdobeClean-Regular.otf
   # fonts:
   #   - family: Schyler
   #     fonts:
