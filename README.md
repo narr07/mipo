@@ -11,3 +11,6 @@ Proyek untuk skripsi [Universitas Pendidikan Indonesia](https://www.upi.edu/) Fa
 ## Color Pallete
 
 ## Font
+Font [https://github.com/narr07/mipo/tree/master/assets/fonts]  yang di gunakan dalam aplikasi ini adalah
+- Adobe Clean
+- GT Flexa
