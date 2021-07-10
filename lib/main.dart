@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'XDOnBoarding1.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'MIPO',
       // theme: ThemeData(fontFamily: 'Raleway'),
       theme: ThemeData(
-        fontFamily: 'AC-Regular',
+        fontFamily: 'AdobeClean-Regular',
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -25,7 +27,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'MIPO'),
+      home: XDOnBoarding1(
+          // title: 'Mipo',
+          ),
     );
   }
 }
@@ -76,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(
           widget.title,
-          style: TextStyle(fontFamily: 'AC-Black'),
+          style: TextStyle(fontFamily: 'AdobeClean-Black'),
         ),
       ),
       body: Padding(
@@ -119,8 +123,10 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+        child: Icon(
+          Icons.add,
+        ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
