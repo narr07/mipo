@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'XDOnBoarding1.dart';
+import 'package:mipo_v1/OnBoard.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: XDOnBoarding1(
+      home: OnBoard(
           // title: 'Mipo',
           ),
     );
