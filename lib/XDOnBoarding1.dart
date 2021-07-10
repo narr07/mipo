@@ -9,857 +9,872 @@ class XDOnBoarding1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff2f3a5a),
+      backgroundColor: const Color(0xffffffff),
       body: Stack(
         children: <Widget>[
-          Pinned.fromPins(
-            Pin(start: 16.0, end: 16.0),
-            Pin(size: 650.0, end: 24.0),
-            child:
-                // Adobe XD layer: 'Rectangle 2' (shape)
-                Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(200.0),
-                  topRight: Radius.circular(20.0),
-                  bottomRight: Radius.circular(20.0),
-                  bottomLeft: Radius.circular(20.0),
+          Padding(
+            padding: const EdgeInsets.only(
+                top: 100, bottom: 80, left: 24, right: 24),
+            child: SizedBox(
+              height: 1500,
+              child:
+
+                  // Box Green
+                  Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(200.0),
+                    topRight: Radius.circular(20.0),
+                    bottomRight: Radius.circular(20.0),
+                    bottomLeft: Radius.circular(20.0),
+                  ),
+                  color: const Color(0xff00ebc7),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0x2a000000),
+                      offset: Offset(0, 8),
+                      blurRadius: 16,
+                    ),
+                  ],
                 ),
-                color: const Color(0xff00ebc7),
-                boxShadow: [
-                  BoxShadow(
-                    color: const Color(0x1a000000),
-                    offset: Offset(0, 8),
-                    blurRadius: 16,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 40),
+            child: Pinned.fromPins(
+              Pin(size: 134.0, middle: 0.2448),
+              Pin(size: 50.0, middle: 0.752),
+              child:
+                  // Adobe XD layer: 'MIPO' (text)
+                  Text(
+                'MIPO',
+                style: TextStyle(
+                  fontFamily: 'GT Flexa Trial',
+                  fontSize: 49.74055480957031,
+                  color: const Color(0xff2f3a5a),
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 15),
+            child: Pinned.fromPins(
+              Pin(start: 59.0, end: 61.0),
+              Pin(size: 88.0, end: 82.0),
+              child:
+                  // Adobe XD layer: 'Media Mencari Ide P…' (text)
+                  Text(
+                'Media Mencari Ide Pokok Untuk Pembelajaran Bahasa Indonesia ',
+                style: TextStyle(
+                  fontFamily: 'Adobe Clean',
+                  fontSize: 19,
+                  color: const Color(0xff84879c),
+                  fontWeight: FontWeight.w500,
+                ),
+                textAlign: TextAlign.left,
+              ),
+            ),
+          ),
+
+          // ICON
+          Padding(
+            padding: const EdgeInsets.only(bottom: 50),
+            child: Pinned.fromPins(
+              Pin(size: 211.0, middle: 0.5),
+              Pin(size: 250.0, middle: 0.5),
+              child:
+                  // Adobe XD layer: 'gambar1' (group)
+                  Stack(
+                children: <Widget>[
+                  Pinned.fromPins(
+                    Pin(start: 0.0, end: 0.0),
+                    Pin(start: 0.0, end: 0.0),
+                    child:
+                        // Adobe XD layer: 'color line' (group)
+                        Stack(
+                      children: <Widget>[
+                        Pinned.fromPins(
+                          Pin(start: 29.4, end: 29.4),
+                          Pin(size: 50.3, middle: 0.4917),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_ccfpi9,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 81.6, middle: 0.4999),
+                          Pin(size: 90.6, start: 5.5),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_nnhz3q,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 60.1, end: 29.4),
+                          Pin(size: 32.8, middle: 0.4523),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_9sfp79,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 68.2, middle: 0.5469),
+                          Pin(size: 88.5, start: 5.5),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_epsb2v,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(start: 27.6, end: 27.6),
+                          Pin(size: 53.7, middle: 0.4913),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_3bnbze,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 85.2, middle: 0.4999),
+                          Pin(size: 94.5, start: 3.3),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_otkdq3,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 95.4, start: 10.0),
+                          Pin(size: 129.8, end: 1.8),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_shgilr,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 99.0, start: 8.3),
+                          Pin(size: 133.3, end: 0.0),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_4sr3n0,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 95.4, end: 10.1),
+                          Pin(size: 129.8, end: 1.8),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_hvfnc9,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 95.5, end: 10.0),
+                          Pin(size: 120.2, end: 11.4),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_yfoh8q,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 15.7, end: 1.8),
+                          Pin(size: 34.3, middle: 0.7573),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_ldu5lb,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 19.3, end: 0.0),
+                          Pin(size: 37.8, middle: 0.7616),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_546oi9,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 15.7, start: 1.8),
+                          Pin(size: 34.3, middle: 0.7573),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_uifolf,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(start: 0.0, end: 8.3),
+                          Pin(start: 0.0, end: 0.0),
+                          child:
+                              // Adobe XD layer: 'Group' (group)
+                              Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(size: 19.3, start: 0.0),
+                                Pin(size: 37.8, middle: 0.7616),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_b9lr07,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 99.0, end: 0.0),
+                                Pin(size: 133.3, end: 0.0),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_7v69q4,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 4.0, middle: 0.2685),
+                                Pin(size: 4.2, start: 32.2),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_em6fef,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 25.1, middle: 0.3181),
+                                Pin(size: 27.8, start: 0.0),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_yt3uiz,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 42.6, end: 12.2),
+                                Pin(size: 8.4, end: 2.5),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_nnhe4d,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 6.0, middle: 0.6862),
+                                Pin(size: 4.3, end: 4.4),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_vbhcay,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 4.6, middle: 0.4517),
+                          Pin(size: 6.8, middle: 0.8033),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_ooauh9,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 4.7, middle: 0.452),
+                          Pin(size: 31.9, middle: 0.7282),
+                          child:
+                              // Adobe XD layer: 'Vector' (shape)
+                              SvgPicture.string(
+                            _svg_iub3m,
+                            allowDrawingOutsideViewBox: true,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Pinned.fromPins(
+                    Pin(size: 66.1, start: 24.4),
+                    Pin(size: 88.1, end: 27.7),
+                    child:
+                        // Adobe XD layer: 'Group 3' (group)
+                        Stack(
+                      children: <Widget>[
+                        Pinned.fromPins(
+                          Pin(start: 0.0, end: 0.0),
+                          Pin(start: 0.0, end: 0.0),
+                          child:
+                              // Adobe XD layer: 'color line' (group)
+                              Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(size: 10.8, middle: 0.5),
+                                Pin(size: 6.3, end: 0.4),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_4431b,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 12.0, middle: 0.5),
+                                Pin(size: 7.4, end: 0.0),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_dvgif7,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(start: 10.0, end: 10.0),
+                                Pin(size: 56.9, start: 11.3),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_uo68mg,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 41.2, middle: 0.5979),
+                                Pin(size: 57.0, start: 11.3),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_jdtqrk,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(start: 0.0, end: 0.0),
+                                Pin(size: 54.9, start: 0.0),
+                                child:
+                                    // Adobe XD layer: 'Group' (group)
+                                    Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(size: 1.2, middle: 0.4986),
+                                      Pin(size: 6.5, start: 0.0),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_pbq94f,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 3.5, middle: 0.2581),
+                                      Pin(size: 5.8, start: 4.8),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_wdbfnv,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 5.2, start: 4.3),
+                                      Pin(size: 3.9, middle: 0.3515),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_48ffvh,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 5.9, start: 0.0),
+                                      Pin(size: 1.3, middle: 0.6675),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_e8ei2q,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 5.2, start: 4.4),
+                                      Pin(size: 3.9, end: 0.0),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_i6e56f,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 3.5, middle: 0.742),
+                                      Pin(size: 5.8, start: 4.8),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_ih0azl,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 5.2, end: 4.3),
+                                      Pin(size: 3.9, middle: 0.3515),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_fuhu9h,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 5.9, end: 0.0),
+                                      Pin(size: 1.3, middle: 0.6675),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_yp4bc0,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 5.2, end: 4.4),
+                                      Pin(size: 3.9, end: 0.0),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_fyvw0,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 21.1, middle: 0.5),
+                                Pin(size: 14.1, end: 5.7),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_wl7n4j,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 22.3, middle: 0.5),
+                                Pin(size: 15.3, end: 5.1),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_92snzt,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 25.3, middle: 0.4975),
+                                Pin(size: 4.0, end: 13.6),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_6zigiw,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 25.1, middle: 0.4997),
+                                Pin(size: 4.0, end: 8.4),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_nkekmv,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(start: 9.4, end: 9.4),
+                                Pin(size: 58.2, start: 10.7),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_p3nykd,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 2.2, middle: 0.2814),
+                                Pin(size: 2.5, middle: 0.5723),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_x5afo2,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 3.3, middle: 0.2235),
+                                Pin(size: 16.3, middle: 0.4261),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_e09ltp,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Pinned.fromPins(
+                          Pin(size: 43.5, end: 7.8),
+                          Pin(size: 38.9, middle: 0.3148),
+                          child:
+                              // Adobe XD layer: 'Group 2' (group)
+                              Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(size: 31.5, start: 2.2),
+                                Pin(start: 3.9, end: 0.4),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_4k73v0,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 29.0, start: 4.7),
+                                Pin(size: 28.9, start: 3.9),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_clbip6,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 21.5, middle: 0.3275),
+                                Pin(size: 23.6, middle: 0.6164),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_93tx75,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 19.1, middle: 0.3937),
+                                Pin(start: 9.4, end: 8.6),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_okipj4,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 11.4, middle: 0.3815),
+                                Pin(size: 12.6, middle: 0.5676),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_glr4xx,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 10.8, middle: 0.3926),
+                                Pin(size: 10.7, middle: 0.5307),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_s2mj03,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 21.3, end: 4.9),
+                                Pin(size: 16.8, start: 5.2),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_7vgdfe,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 6.6, end: 4.2),
+                                Pin(size: 9.5, start: 0.4),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_l47o2d,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 7.2, end: 3.8),
+                                Pin(size: 10.3, start: 0.0),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_e1dckl,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 10.4, end: 0.3),
+                                Pin(size: 6.0, start: 5.1),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_oaod18,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(start: 0.0, end: 0.0),
+                                Pin(start: 3.6, end: 0.0),
+                                child:
+                                    // Adobe XD layer: 'Group' (group)
+                                    Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(size: 11.1, end: 0.0),
+                                      Pin(size: 6.7, start: 1.2),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_3xev45,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 2.0, start: 0.0),
+                                      Pin(size: 6.6, middle: 0.3398),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_r4jjvx,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 1.0, start: 2.0),
+                                      Pin(size: 1.2, middle: 0.2261),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_t02fl1,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 32.2, start: 1.9),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_x0cach,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 12.1, middle: 0.3791),
+                                      Pin(size: 13.3, middle: 0.5),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_o4qgqy,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                    Pinned.fromPins(
+                                      Pin(size: 22.1, middle: 0.3223),
+                                      Pin(start: 5.5, end: 5.5),
+                                      child:
+                                          // Adobe XD layer: 'Vector' (shape)
+                                          SvgPicture.string(
+                                        _svg_f971yt,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 6.7, middle: 0.2322),
+                                Pin(size: 4.4, end: 3.1),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_vvou8a,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 1.2, start: 6.8),
+                                Pin(size: 1.4, middle: 0.783),
+                                child:
+                                    // Adobe XD layer: 'Vector' (shape)
+                                    SvgPicture.string(
+                                  _svg_xoubo2,
+                                  allowDrawingOutsideViewBox: true,
+                                  fit: BoxFit.fill,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Pinned.fromPins(
+                    Pin(size: 74.1, end: 20.8),
+                    Pin(size: 19.9, middle: 0.5877),
+                    child:
+                        // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
+                        SvgPicture.string(
+                      _svg_gviyje,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromPins(
+                    Pin(size: 74.1, end: 20.8),
+                    Pin(size: 19.9, middle: 0.6518),
+                    child:
+                        // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
+                        SvgPicture.string(
+                      _svg_66vae9,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromPins(
+                    Pin(size: 74.1, end: 20.8),
+                    Pin(size: 19.9, middle: 0.7159),
+                    child:
+                        // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
+                        SvgPicture.string(
+                      _svg_4cbvdd,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromPins(
+                    Pin(size: 74.1, end: 20.8),
+                    Pin(size: 19.9, middle: 0.78),
+                    child:
+                        // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
+                        SvgPicture.string(
+                      _svg_331xt7,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromPins(
+                    Pin(size: 74.1, end: 20.8),
+                    Pin(size: 19.9, end: 35.9),
+                    child:
+                        // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
+                        SvgPicture.string(
+                      _svg_88aav,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  Pinned.fromPins(
+                    Pin(size: 74.1, end: 20.8),
+                    Pin(size: 19.9, end: 21.1),
+                    child:
+                        // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
+                        SvgPicture.string(
+                      _svg_namj8i,
+                      allowDrawingOutsideViewBox: true,
+                      fit: BoxFit.fill,
+                    ),
                   ),
                 ],
               ),
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 134.0, middle: 0.2448),
-            Pin(size: 50.0, middle: 0.752),
-            child:
-                // Adobe XD layer: 'MIPO' (text)
-                Text(
-              'MIPO',
-              style: TextStyle(
-                fontFamily: 'GT Flexa Trial',
-                fontSize: 49.74055480957031,
-                color: const Color(0xff2f3a5a),
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(start: 59.0, end: 61.0),
-            Pin(size: 88.0, end: 82.0),
-            child:
-                // Adobe XD layer: 'Media Mencari Ide P…' (text)
-                Text(
-              'Media Mencari Ide Pokok Untuk Pembelajaran Bahasa Indonesia ',
-              style: TextStyle(
-                fontFamily: 'Adobe Clean',
-                fontSize: 19,
-                color: const Color(0xff84879c),
-                fontWeight: FontWeight.w500,
-              ),
-              textAlign: TextAlign.left,
-            ),
-          ),
-          Pinned.fromPins(
-            Pin(size: 211.0, middle: 0.5),
-            Pin(size: 250.0, middle: 0.5),
-            child:
-                // Adobe XD layer: 'gambar1' (group)
-                Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child:
-                      // Adobe XD layer: 'color line' (group)
-                      Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 29.4, end: 29.4),
-                        Pin(size: 50.3, middle: 0.4917),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_ccfpi9,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 81.6, middle: 0.4999),
-                        Pin(size: 90.6, start: 5.5),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_nnhz3q,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 60.1, end: 29.4),
-                        Pin(size: 32.8, middle: 0.4523),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_9sfp79,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 68.2, middle: 0.5469),
-                        Pin(size: 88.5, start: 5.5),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_epsb2v,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 27.6, end: 27.6),
-                        Pin(size: 53.7, middle: 0.4913),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_3bnbze,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 85.2, middle: 0.4999),
-                        Pin(size: 94.5, start: 3.3),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_otkdq3,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 95.4, start: 10.0),
-                        Pin(size: 129.8, end: 1.8),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_shgilr,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 99.0, start: 8.3),
-                        Pin(size: 133.3, end: 0.0),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_4sr3n0,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 95.4, end: 10.1),
-                        Pin(size: 129.8, end: 1.8),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_hvfnc9,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 95.5, end: 10.0),
-                        Pin(size: 120.2, end: 11.4),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_yfoh8q,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 15.7, end: 1.8),
-                        Pin(size: 34.3, middle: 0.7573),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_ldu5lb,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 19.3, end: 0.0),
-                        Pin(size: 37.8, middle: 0.7616),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_546oi9,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 15.7, start: 1.8),
-                        Pin(size: 34.3, middle: 0.7573),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_uifolf,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 8.3),
-                        Pin(start: 0.0, end: 0.0),
-                        child:
-                            // Adobe XD layer: 'Group' (group)
-                            Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(size: 19.3, start: 0.0),
-                              Pin(size: 37.8, middle: 0.7616),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_b9lr07,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 99.0, end: 0.0),
-                              Pin(size: 133.3, end: 0.0),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_7v69q4,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 4.0, middle: 0.2685),
-                              Pin(size: 4.2, start: 32.2),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_em6fef,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 25.1, middle: 0.3181),
-                              Pin(size: 27.8, start: 0.0),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_yt3uiz,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 42.6, end: 12.2),
-                              Pin(size: 8.4, end: 2.5),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_nnhe4d,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 6.0, middle: 0.6862),
-                              Pin(size: 4.3, end: 4.4),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_vbhcay,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 4.6, middle: 0.4517),
-                        Pin(size: 6.8, middle: 0.8033),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_ooauh9,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 4.7, middle: 0.452),
-                        Pin(size: 31.9, middle: 0.7282),
-                        child:
-                            // Adobe XD layer: 'Vector' (shape)
-                            SvgPicture.string(
-                          _svg_iub3m,
-                          allowDrawingOutsideViewBox: true,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 66.1, start: 24.4),
-                  Pin(size: 88.1, end: 27.7),
-                  child:
-                      // Adobe XD layer: 'Group 3' (group)
-                      Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child:
-                            // Adobe XD layer: 'color line' (group)
-                            Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(size: 10.8, middle: 0.5),
-                              Pin(size: 6.3, end: 0.4),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_4431b,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 12.0, middle: 0.5),
-                              Pin(size: 7.4, end: 0.0),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_dvgif7,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(start: 10.0, end: 10.0),
-                              Pin(size: 56.9, start: 11.3),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_uo68mg,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 41.2, middle: 0.5979),
-                              Pin(size: 57.0, start: 11.3),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_jdtqrk,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(size: 54.9, start: 0.0),
-                              child:
-                                  // Adobe XD layer: 'Group' (group)
-                                  Stack(
-                                children: <Widget>[
-                                  Pinned.fromPins(
-                                    Pin(size: 1.2, middle: 0.4986),
-                                    Pin(size: 6.5, start: 0.0),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_pbq94f,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 3.5, middle: 0.2581),
-                                    Pin(size: 5.8, start: 4.8),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_wdbfnv,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 5.2, start: 4.3),
-                                    Pin(size: 3.9, middle: 0.3515),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_48ffvh,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 5.9, start: 0.0),
-                                    Pin(size: 1.3, middle: 0.6675),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_e8ei2q,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 5.2, start: 4.4),
-                                    Pin(size: 3.9, end: 0.0),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_i6e56f,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 3.5, middle: 0.742),
-                                    Pin(size: 5.8, start: 4.8),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_ih0azl,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 5.2, end: 4.3),
-                                    Pin(size: 3.9, middle: 0.3515),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_fuhu9h,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 5.9, end: 0.0),
-                                    Pin(size: 1.3, middle: 0.6675),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_yp4bc0,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 5.2, end: 4.4),
-                                    Pin(size: 3.9, end: 0.0),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_fyvw0,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 21.1, middle: 0.5),
-                              Pin(size: 14.1, end: 5.7),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_wl7n4j,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 22.3, middle: 0.5),
-                              Pin(size: 15.3, end: 5.1),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_92snzt,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 25.3, middle: 0.4975),
-                              Pin(size: 4.0, end: 13.6),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_6zigiw,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 25.1, middle: 0.4997),
-                              Pin(size: 4.0, end: 8.4),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_nkekmv,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(start: 9.4, end: 9.4),
-                              Pin(size: 58.2, start: 10.7),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_p3nykd,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 2.2, middle: 0.2814),
-                              Pin(size: 2.5, middle: 0.5723),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_x5afo2,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 3.3, middle: 0.2235),
-                              Pin(size: 16.3, middle: 0.4261),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_e09ltp,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 43.5, end: 7.8),
-                        Pin(size: 38.9, middle: 0.3148),
-                        child:
-                            // Adobe XD layer: 'Group 2' (group)
-                            Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(size: 31.5, start: 2.2),
-                              Pin(start: 3.9, end: 0.4),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_4k73v0,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 29.0, start: 4.7),
-                              Pin(size: 28.9, start: 3.9),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_clbip6,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 21.5, middle: 0.3275),
-                              Pin(size: 23.6, middle: 0.6164),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_93tx75,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 19.1, middle: 0.3937),
-                              Pin(start: 9.4, end: 8.6),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_okipj4,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 11.4, middle: 0.3815),
-                              Pin(size: 12.6, middle: 0.5676),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_glr4xx,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 10.8, middle: 0.3926),
-                              Pin(size: 10.7, middle: 0.5307),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_s2mj03,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 21.3, end: 4.9),
-                              Pin(size: 16.8, start: 5.2),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_7vgdfe,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 6.6, end: 4.2),
-                              Pin(size: 9.5, start: 0.4),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_l47o2d,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 7.2, end: 3.8),
-                              Pin(size: 10.3, start: 0.0),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_e1dckl,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 10.4, end: 0.3),
-                              Pin(size: 6.0, start: 5.1),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_oaod18,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 3.6, end: 0.0),
-                              child:
-                                  // Adobe XD layer: 'Group' (group)
-                                  Stack(
-                                children: <Widget>[
-                                  Pinned.fromPins(
-                                    Pin(size: 11.1, end: 0.0),
-                                    Pin(size: 6.7, start: 1.2),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_3xev45,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 2.0, start: 0.0),
-                                    Pin(size: 6.6, middle: 0.3398),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_r4jjvx,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 1.0, start: 2.0),
-                                    Pin(size: 1.2, middle: 0.2261),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_t02fl1,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 32.2, start: 1.9),
-                                    Pin(start: 0.0, end: 0.0),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_x0cach,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 12.1, middle: 0.3791),
-                                    Pin(size: 13.3, middle: 0.5),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_o4qgqy,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                  Pinned.fromPins(
-                                    Pin(size: 22.1, middle: 0.3223),
-                                    Pin(start: 5.5, end: 5.5),
-                                    child:
-                                        // Adobe XD layer: 'Vector' (shape)
-                                        SvgPicture.string(
-                                      _svg_f971yt,
-                                      allowDrawingOutsideViewBox: true,
-                                      fit: BoxFit.fill,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 6.7, middle: 0.2322),
-                              Pin(size: 4.4, end: 3.1),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_vvou8a,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Pinned.fromPins(
-                              Pin(size: 1.2, start: 6.8),
-                              Pin(size: 1.4, middle: 0.783),
-                              child:
-                                  // Adobe XD layer: 'Vector' (shape)
-                                  SvgPicture.string(
-                                _svg_xoubo2,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 74.1, end: 20.8),
-                  Pin(size: 19.9, middle: 0.5877),
-                  child:
-                      // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
-                      SvgPicture.string(
-                    _svg_gviyje,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 74.1, end: 20.8),
-                  Pin(size: 19.9, middle: 0.6518),
-                  child:
-                      // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
-                      SvgPicture.string(
-                    _svg_66vae9,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 74.1, end: 20.8),
-                  Pin(size: 19.9, middle: 0.7159),
-                  child:
-                      // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
-                      SvgPicture.string(
-                    _svg_4cbvdd,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 74.1, end: 20.8),
-                  Pin(size: 19.9, middle: 0.78),
-                  child:
-                      // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
-                      SvgPicture.string(
-                    _svg_331xt7,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 74.1, end: 20.8),
-                  Pin(size: 19.9, end: 35.9),
-                  child:
-                      // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
-                      SvgPicture.string(
-                    _svg_88aav,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Pinned.fromPins(
-                  Pin(size: 74.1, end: 20.8),
-                  Pin(size: 19.9, end: 21.1),
-                  child:
-                      // Adobe XD layer: 'Vector 1 (Stroke)' (shape)
-                      SvgPicture.string(
-                    _svg_namj8i,
-                    allowDrawingOutsideViewBox: true,
-                    fit: BoxFit.fill,
-                  ),
-                ),
-              ],
             ),
           ),
           Pinned.fromPins(
