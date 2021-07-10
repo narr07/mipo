@@ -72,7 +72,6 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-<<<<<<< HEAD
     - family: AdobeClean-Black
       fonts:
         - asset: assets\fonts\AdobeClean-Black.otf
@@ -85,17 +84,6 @@ flutter:
     - family: GT Flexa Trial
       fonts:
         - asset: assets\fonts\GT-Flexa-Bold-Trial.otf
-=======
-    - family: AC-Black
-      fonts:
-        - asset: assets\fonts\AdobeClean-Black.otf
-    - family: AC-Bold
-      fonts:
-        - asset: assets\fonts\AdobeClean-Bold.otf
-    - family: AC-Regular
-      fonts:
-        - asset: assets\fonts\AdobeClean-Regular.otf
->>>>>>> 8a64d84992137c7d2c227672c78d2006fa2972ea
   # fonts:
   #   - family: Schyler
   #     fonts:
