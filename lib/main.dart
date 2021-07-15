@@ -1,314 +1,174 @@
-import 'dart:async';
-
+import 'package:adobe_xd/adobe_xd.dart';
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:adobe_xd/pinned.dart';
+import 'package:mipo_v1/OnBoard.dart';
+import 'package:mipo_v1/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'MIPO',
-        // theme: ThemeData(fontFamily: 'Raleway'),
-        theme: ThemeData(
-          fontFamily: 'AdobeClean-Regular',
-          // This is the theme of your application.
-          //
-          // Try running your application with "flutter run". You'll see the
-          // application has a blue toolbar. Then, without quitting the app, try
-          // changing the primarySwatch below to Colors.green and then invoke
-          // "hot reload" (press "r" in the console where you ran "flutter run",
-          // or simply save your changes to "hot reload" in a Flutter IDE).
-          // Notice that the counter didn't reset back to zero; the application
-          // is not restarted.
-          primarySwatch: Colors.red,
-        ),
-        home: SplashScreen());
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
-    //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: Center(
-          child: Text(
-            widget.title,
-            style: TextStyle(fontFamily: 'AdobeClean-Black', fontSize: 50.0),
-          ),
-        ),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Center(
-          // Center is a layout widget. It takes a single child and positions it
-          // in the middle of the parent.
-          child: Column(
-            // Column is also a layout widget. It takes a list of children and
-            // arranges them vertically. By default, it sizes itself to fit its
-            // children horizontally, and tries to be as tall as its parent.
-            //
-            // Invoke "debug painting" (press "p" in the console, choose the
-            // "Toggle Debug Paint" action from the Flutter Inspector in Android
-            // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-            // to see the wireframe for each widget.
-            //
-            // Column has various properties to control how it sizes itself and
-            // how it positions its children. Here we use mainAxisAlignment to
-            // center the children vertically; the main axis here is the vertical
-            // axis because Columns are vertical (the cross axis would be
-            // horizontal).
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'You have pushed the bu   tton fbfb this many times:',
-                style: TextStyle(
-                  fontSize: 19,
-                ),
-                // style: TextStyle(fontFamily: 'RobotoMono'),
-              ),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.headline4,
-              ),
-            ],
-          ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(
-          Icons.add,
-        ), // This trailing comma makes auto-formatting nicer for build methods.
-      ),
-    );
-  }
-}
-
-class SplashScreen extends StatefulWidget {
-  SplashScreen({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  _SplashScreenState createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen> {
-  @override
-  @override
-  void initState() {
-    super.initState();
-
-    Timer(
-        Duration(seconds: 2),
-        () => Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => MyHomePage(
-                      title: 'MIPO',
-                    ))));
-  }
-
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xff2f3a5a),
-      body: Stack(
-        children: <Widget>[
-          Pinned.fromPins(
-            Pin(size: 173.4, middle: 0.5),
-            Pin(size: 211.4, middle: 0.5),
-            child: Stack(
-              children: <Widget>[
-                Pinned.fromPins(
-                  Pin(start: 0.0, end: 0.0),
-                  Pin(start: 0.0, end: 0.0),
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 0.0),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: SvgPicture.string(
-                                _svg_cgx05j,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
+        title: 'Clean Code',
+        home: AnimatedSplashScreen(
+            duration: 2000,
+            splash: Container(
+              child: Stack(
+                children: <Widget>[
+                  Pinned.fromPins(
+                    Pin(size: 173.4, middle: 0.5),
+                    Pin(size: 211.4, middle: 0.5),
+                    child:
+                        // Adobe XD layer: 'logo' (group)
+                        Stack(
+                      children: <Widget>[
+                        Pinned.fromPins(
+                          Pin(start: 0.0, end: 0.0),
+                          Pin(start: 0.0, end: 0.0),
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(start: 0.0, end: 0.0),
+                                Pin(start: 0.0, end: 0.0),
+                                child: Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(start: 0.0, end: 0.0),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child: SvgPicture.string(
+                                        _svg_cgx05j,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                        Pinned.fromPins(
+                          Pin(start: 6.3, end: 6.3),
+                          Pin(start: 6.3, end: 6.3),
+                          child: Stack(
+                            children: <Widget>[
+                              Pinned.fromPins(
+                                Pin(size: 60.7, middle: 0.4997),
+                                Pin(size: 36.4, middle: 0.3061),
+                                child: Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(start: 0.0, end: 0.0),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child: SvgPicture.string(
+                                        _svg_au43zy,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 26.9, middle: 0.299),
+                                Pin(size: 9.0, end: 14.5),
+                                child: Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(start: 0.0, end: 0.0),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child: SvgPicture.string(
+                                        _svg_jl6iko,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 44.8, middle: 0.6543),
+                                Pin(size: 9.0, end: 14.5),
+                                child: Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(start: 0.0, end: 0.0),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child: SvgPicture.string(
+                                        _svg_4ospzb,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 17.9, middle: 0.7193),
+                                Pin(size: 9.0, end: 0.0),
+                                child: Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(start: 0.0, end: 0.0),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child: SvgPicture.string(
+                                        _svg_9vhbpy,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(start: 0.0, end: 0.0),
+                                Pin(start: 0.0, end: 29.0),
+                                child: Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(start: 0.0, end: 0.0),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child: SvgPicture.string(
+                                        _svg_jdqmad,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Pinned.fromPins(
+                                Pin(size: 53.8, middle: 0.3741),
+                                Pin(size: 9.0, end: 0.0),
+                                child: Stack(
+                                  children: <Widget>[
+                                    Pinned.fromPins(
+                                      Pin(start: 0.0, end: 0.0),
+                                      Pin(start: 0.0, end: 0.0),
+                                      child: SvgPicture.string(
+                                        _svg_eclot9,
+                                        allowDrawingOutsideViewBox: true,
+                                        fit: BoxFit.fill,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-                Pinned.fromPins(
-                  Pin(start: 6.3, end: 6.3),
-                  Pin(start: 6.3, end: 6.3),
-                  child: Stack(
-                    children: <Widget>[
-                      Pinned.fromPins(
-                        Pin(size: 60.7, middle: 0.4997),
-                        Pin(size: 36.4, middle: 0.3061),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: SvgPicture.string(
-                                _svg_au43zy,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 26.9, middle: 0.299),
-                        Pin(size: 9.0, end: 14.5),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: SvgPicture.string(
-                                _svg_jl6iko,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 44.8, middle: 0.6543),
-                        Pin(size: 9.0, end: 14.5),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: SvgPicture.string(
-                                _svg_4ospzb,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 17.9, middle: 0.7193),
-                        Pin(size: 9.0, end: 0.0),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: SvgPicture.string(
-                                _svg_9vhbpy,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(start: 0.0, end: 0.0),
-                        Pin(start: 0.0, end: 29.0),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: SvgPicture.string(
-                                _svg_jdqmad,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      Pinned.fromPins(
-                        Pin(size: 53.8, middle: 0.3741),
-                        Pin(size: 9.0, end: 0.0),
-                        child: Stack(
-                          children: <Widget>[
-                            Pinned.fromPins(
-                              Pin(start: 0.0, end: 0.0),
-                              Pin(start: 0.0, end: 0.0),
-                              child: SvgPicture.string(
-                                _svg_eclot9,
-                                allowDrawingOutsideViewBox: true,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
-      ),
-    );
+            nextScreen: App(),
+            splashTransition: SplashTransition.fadeTransition,
+            backgroundColor: kBaseColor));
   }
 }
 
